@@ -9,6 +9,7 @@
     <p>Network: {{ show.network }}</p>
     <p>Favorite: {{ show.favorite }}</p>
     <p>User Id: {{ show.user_id }}</p>
+    <router-link v-bind:to="`/shows/${show.id}/edit`">Edit Show</router-link>
     <router-link to="/shows">Back to all Shows!</router-link>
   </div>
 </template>
