@@ -53,7 +53,7 @@ export default {
         .patch("/shows/" + show.id, editShowParams)
         .then((response) => {
           console.log("shows update", response);
-          this.$router.push("/shows");
+          this.$router.push(`/shows/${show.id}`);
         })
         .catch((error) => {
           console.log("shows update error", error.response);
