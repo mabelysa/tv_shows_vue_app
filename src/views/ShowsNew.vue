@@ -21,7 +21,7 @@
       <input type="text" v-model="newShowParams.favorite" />
       Image:
       <input type="text" v-model="newShowParams.image" />
-      User_id:
+      User Id:
       <input type="text" v-model="newShowParams.user_id" />
       <br />
       <br />
@@ -41,7 +41,7 @@ export default {
   },
   created: function () {},
   methods: {
-    createPhoto: function () {
+    createShow: function () {
       axios
         .post("/shows", this.newShowParams)
         .then((response) => {
