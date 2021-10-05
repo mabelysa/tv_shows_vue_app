@@ -23,7 +23,10 @@
       <input type="text" v-model="show.image" />
       User ID:
       <input type="text" v-model="show.user_id" />
+      <br />
       <input type="submit" value="Update" />
+      <br />
+      <router-link v-bind:to="`/shows/${show.id}`">Back to {{ show.title }} !</router-link>
     </form>
   </div>
 </template>
