@@ -1,6 +1,6 @@
 <template>
   <div class="shows-new">
-    <h1>New SHow</h1>
+    <h1>New Show</h1>
     <form v-on:submit.prevent="createShow()">
       <ul>
         <li v-for="error in errors" v-bind:key="error">{{ error }}</li>
@@ -23,6 +23,8 @@
       <input type="text" v-model="newShowParams.image" />
       User_id:
       <input type="text" v-model="newShowParams.user_id" />
+      <br />
+      <br />
       <input type="submit" value="Create" />
     </form>
   </div>
