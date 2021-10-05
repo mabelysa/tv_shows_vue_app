@@ -5,7 +5,7 @@
       |
       <router-link to="/about">About</router-link>
       |
-      <router-link to="/shows">All shows</router-link>
+      <router-link to="/shows">Shows</router-link>
     </div>
     <router-view />
   </div>
