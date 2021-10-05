@@ -17,7 +17,7 @@
 
 <style>
 img {
-  max-width: auto;
+  max-width: 400px;
   max-height: 400px;
 }
 </style>
