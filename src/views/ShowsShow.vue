@@ -1,16 +1,15 @@
 <template>
   <div class="shows-show">
     <h2>{{ show.title }}</h2>
-    <img v-bind:src="show.image" v-bind:alt="show.title" />
+    <img class="rounded img-thumbnail" v-bind:src="show.image" v-bind:alt="show.title" />
     <p>Year: {{ show.year }}</p>
     <p>Description: {{ show.description }}</p>
     <p>Creator: {{ show.creator }}</p>
     <p>Seasons: {{ show.seasons }}</p>
     <p>Network: {{ show.network }}</p>
     <p>Favorite: {{ show.favorite }}</p>
-    <p>Image: {{ show.image }}</p>
     <p>User Id: {{ show.user_id }}</p>
-    <router-link to="/shows">Back to all shows</router-link>
+    <router-link to="/shows">Back to all Shows!</router-link>
   </div>
 </template>
 
