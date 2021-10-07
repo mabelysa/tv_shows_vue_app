@@ -5,9 +5,12 @@
       |
       <router-link to="/about">About</router-link>
       |
+      <router-link to="/signup">Signup</router-link>
+      |
       <router-link to="/shows">Shows</router-link>
       |
       <router-link to="/shows/new">New</router-link>
+      |
     </div>
     <router-view />
   </div>
