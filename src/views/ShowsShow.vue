@@ -11,6 +11,8 @@
     <p>User Id: {{ show.user_id }}</p>
     <router-link v-bind:to="`/shows/${show.id}/edit`">Edit Show</router-link>
     <br />
+    <button v-on:click="destroyShow(show)">Destroy Show</button>
+    <br />
     <router-link to="/shows">Back to all Shows!</router-link>
   </div>
 </template>
@@ -29,6 +31,13 @@ export default {
       this.show = response.data;
     });
   },
-  methods: {},
+  methods: {
+    destroyShow: function (show) {
+      axios.delete("/shows/" + show.id).then((response) => {
+        console.log("shows destroy", response);
+        this.$router.push("/shows");
+      });
+    },
+  },
 };
 </script>
