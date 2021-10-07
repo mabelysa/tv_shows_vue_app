@@ -9,6 +9,8 @@
       |
       <router-link to="/login">Login</router-link>
       |
+      <router-link to="/logout">Logout</router-link>
+      |
       <router-link to="/shows">Shows</router-link>
       |
       <router-link to="/shows/new">New</router-link>
